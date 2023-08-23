@@ -1,10 +1,23 @@
 import React from 'react'
+import { useDispatch } from 'react-redux';
+import { setNameTrainer } from '../store/slices/nameTrainer.slice';
+import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
 
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+  
     const handleSubmit = e => {
+
         e.preventDefault();
-        console.log(e.target.name.value.trim());
+        const nameTrainerPoke = e.target.name.value.trim();
+        if (nameTrainerPoke.length !== 0) {
+          dispatch(setNameTrainer(nameTrainerPoke));
+          e.target.name.value = '';
+          navigate('/pokedex')
+        };
+        
     };
 
   return (
