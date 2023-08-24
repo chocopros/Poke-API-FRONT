@@ -1,0 +1,43 @@
+.grass{
+    background: rgb(126,198,197);
+background: linear-gradient(180deg, rgba(126,198,197,1) 0%, rgba(171,218,198,1) 35%, rgba(202,224,153,1) 100%);
+}
+
+.grass-slop{
+    background-color: rgb(39, 159, 111);
+}
+
+.fire{
+    background: rgb(232,174,27);
+    background: linear-gradient(360deg, rgba(232,174,27,1) 0%, rgba(227,88,37,1) 35%, rgba(161,36,38,1) 100%);
+}
+.fire-slop{
+    background-color: rgb(227, 116, 116);
+}
+
+.water{
+    background: rgb(19,50,88);
+    background: linear-gradient(180deg, rgba(19,50,88,1) 0%, rgba(20,121,251,1) 35%, rgba(130,178,241,1) 100%);
+}
+
+.water-slop{
+    background: rgb(19,50,88);
+}
+
+.bug{
+    background: rgb(98,219,96);
+background: linear-gradient(180deg, rgba(98,219,96,1) 0%, rgba(59,176,57,1) 35%, rgba(170,255,168,1) 100%);
+}
+
+.bug-slop{
+    background-color: rgb(0, 0, 0);
+}
+
+.normal{
+    background: rgb(65,19,5);
+    background: linear-gradient(180deg, rgba(65,19,5,1) 0%, rgba(122,88,39,1) 35%, rgba(124,63,76,1) 100%);
+}
+
+.normal-slop{
+    background-color: rgb(176, 111, 32);
+}

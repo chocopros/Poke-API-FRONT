@@ -2,6 +2,29 @@ import React from 'react'
 import { useDispatch } from 'react-redux';
 import { setNameTrainer } from '../store/slices/nameTrainer.slice';
 import { useNavigate } from 'react-router-dom';
+import styled from 'styled-components';
+
+const MainHome = styled.section`
+
+  height: 100vh;
+  display: flex;
+  flex-direction: column ;
+  justify-content: center;
+  align-items: center;
+
+`;
+
+const ContainerLogo = styled.div`
+  
+  width:75vw;
+  
+`;
+
+
+const LogoPokedex = styled.img`
+  width: 100%;
+  
+`
 
 const Home = () => {
 
@@ -21,14 +44,17 @@ const Home = () => {
     };
 
   return (
-    <section>
+    <MainHome>
+      <ContainerLogo>
+        <LogoPokedex src="/images/POKEDEX-LOGO.png" alt="Pokedex Logo" />
+      </ContainerLogo>
         <h1>Hi Trainer! Pokemon</h1>
         <p>To Start give me your trainer name</p>
         <form onSubmit={handleSubmit}>
             <input id='name' type="text" />
             <button>Go!</button>
         </form>
-    </section>
+    </MainHome>
   )
 }
 

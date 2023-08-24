@@ -2,7 +2,18 @@ import React, { useState } from 'react'
 import { useSelector } from 'react-redux'
 import useFetch from '../../hooks/useFetch';
 import CardPokemon from './CARD/CardPokemon';
+import styled from 'styled-components';
 
+const ContainerCards = styled.div`
+  display: flex;
+  max-width: 1300px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  
+`
 
 const Pokedex = () => {
 
@@ -15,7 +26,7 @@ const Pokedex = () => {
     <div>
 
       <h2>{`Welcome to Pokedex APP >>${nameTrainer}<<`}</h2>
-      <div className="cards__container">
+      <ContainerCards>
         {
           pokemons?.results.map( pokemon => (
             <CardPokemon
@@ -25,7 +36,7 @@ const Pokedex = () => {
 
           ))
         }
-      </div>
+      </ContainerCards>
 
     </div>
   )
