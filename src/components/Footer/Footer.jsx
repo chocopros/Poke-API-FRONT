@@ -11,7 +11,7 @@ const FooterEnd = styled.footer`
 
 const RedLabel = styled.div`
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-around;
     align-items: center;
     
     height: 40px;
@@ -26,15 +26,27 @@ const Autor = styled.p`
     color: white;
     margin-right: 20px;
     font-size: small;
-    
+`;
 
+const Contact = styled.ul`
+    display: flex;
+    height: 30px;
+`;
+
+const Logo = styled.img`
+    height: 100%;
+   
 `;
 
 const Footer = () => {
   return (
     <FooterEnd>
         <RedLabel>
+            <Contact>
+                <li><a href="/images/github-1.png"><Logo src="/images/github-1.png" alt="" /></a></li>
+            </Contact>
             <Autor>Application created by Jesus Arechider, all rights reserved</Autor>
+            
         </RedLabel>
     </FooterEnd>
 
