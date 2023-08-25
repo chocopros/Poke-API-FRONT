@@ -26,7 +26,6 @@ const ContainerImg = styled.div`
 
 const LogoPokedex = styled.img`
     width: 100%;
-    
 `;
 
 const Header = () => {

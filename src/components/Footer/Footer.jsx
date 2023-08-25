@@ -43,7 +43,7 @@ const Footer = () => {
     <FooterEnd>
         <RedLabel>
             <Contact>
-                <li><a href="/images/github-1.png"><Logo src="/images/github-1.png" alt="" /></a></li>
+                <li><a href="https://github.com/chocopros"><Logo src="/images/github-1.png" alt="" /></a></li>
             </Contact>
             <Autor>Application created by Jesus Arechider, all rights reserved</Autor>
             

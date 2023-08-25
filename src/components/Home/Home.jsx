@@ -12,11 +12,10 @@ const MainHome = styled.section`
   justify-content: center;
   align-items: center;
   position: relative;
-
 `;
 
 const ContainerLogo = styled.div`
-  width:45vw;
+  width:50vw;
 `;
 
 const LogoPokedex = styled.img`
@@ -25,12 +24,15 @@ const LogoPokedex = styled.img`
 
 const BodyWelcome = styled.div`
   margin: 30px 0;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 10px
+`;
+
+const Title = styled.h1`
+  color: red;
 `;
 
 
@@ -58,7 +60,7 @@ const Home = () => {
         <LogoPokedex src="/images/POKEDEX-LOGO.png" alt="Pokedex Logo" />
       </ContainerLogo>
       <BodyWelcome>
-        <h1>Hi Trainer! Pokemon</h1>
+        <Title>Hi Trainer! Pokemon Master</Title>
         <p>To Start give me your trainer name</p>
         <form onSubmit={handleSubmit}>
             <input id='name' type="text" />

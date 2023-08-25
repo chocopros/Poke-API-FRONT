@@ -22,8 +22,8 @@ const ContainerCards = styled.div`
 
 
 const Greeting = styled.h2`
- 
-  margin: 10px auto;
+  max-width: 1300px;
+  margin: 30px auto;
 `;
 
 
@@ -42,7 +42,7 @@ const Pokedex = () => {
       <Header />
       
 
-      <Greeting>{`Welcome Trainer to Pokedex APP >>${nameTrainer}<<`}</Greeting>
+      <Greeting>{`Welcome ${nameTrainer}, to Pokedex!!`}</Greeting>
 
       <ContainerCards>
         {

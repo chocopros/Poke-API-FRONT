@@ -5,11 +5,10 @@ import ProtectedRoutes from './components/ProtectedRoutes/ProtectedRoutes'
 import Pokedex from './components/Pokedex/Pokedex'
 import PokemonDetails from './components/Pokemon/PokemonDetails'
 import Footer from './components/Footer/Footer'
+import NoInfo from './components/NoInfo/Noinfo'
 
   
 function App() {
-
-  
 
   return (
     <>
@@ -21,6 +20,8 @@ function App() {
           <Route path='/pokedex' element={<Pokedex />} />
           <Route path='/pokedex/:id' element={<PokemonDetails />} />
         </Route>
+
+        <Route path='*' element={<NoInfo />} />
 
       </Routes>
       
