@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import styled from 'styled-components';
 import './StyleColorPokemon.css'
+import { useNavigate } from 'react-router-dom';
 
 const ArticleCard = styled.div`
 
@@ -67,17 +68,22 @@ const CardPokemon = ( { url } ) => {
 
     const [pokemon, setPokemon] = useState()
 
+    const navigate = useNavigate()
+
     useEffect(()=> {
         axios.get(url)
             .then(res => setPokemon(res.data))
             .catch(err => console.log(err))
     },[url])
 
-    console.log(pokemon)
+    const handleClick = () => {
+        navigate(`/pokedex/${pokemon.name}`)
+    };
+
 
   return (
 
-    <ArticleCard className={`${pokemon?.types[0].type.name}`} >
+    <ArticleCard onClick={handleClick} className={`${pokemon?.types[0].type.name}`} >
 
         <ImgPokemon src={pokemon?.sprites.other['official-artwork']['front_default']} alt={pokemon?.name}  />
         <BgPoke src='/images/pokeBallBg.png' />
