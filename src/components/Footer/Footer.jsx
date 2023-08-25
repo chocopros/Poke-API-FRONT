@@ -4,7 +4,7 @@ import styled from 'styled-components'
 const FooterEnd = styled.footer`
     height: 100px;
     width: 100%;
-    background-color: red;
+    background-color: #DD1A1A;
     position: relative;
     
 `;

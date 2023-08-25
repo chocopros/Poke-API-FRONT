@@ -11,20 +11,18 @@ const MainHome = styled.section`
   flex-direction: column ;
   justify-content: center;
   align-items: center;
+  position: relative;
 
 `;
 
 const ContainerLogo = styled.div`
-  
   width:75vw;
-  
 `;
-
 
 const LogoPokedex = styled.img`
   width: 100%;
-  
-`
+`;
+
 
 const Home = () => {
 
@@ -45,9 +43,12 @@ const Home = () => {
 
   return (
     <MainHome>
+
+
       <ContainerLogo>
         <LogoPokedex src="/images/POKEDEX-LOGO.png" alt="Pokedex Logo" />
       </ContainerLogo>
+
         <h1>Hi Trainer! Pokemon</h1>
         <p>To Start give me your trainer name</p>
         <form onSubmit={handleSubmit}>

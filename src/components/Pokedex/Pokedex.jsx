@@ -4,6 +4,10 @@ import useFetch from '../../hooks/useFetch';
 import CardPokemon from './CARD/CardPokemon';
 import styled from 'styled-components';
 
+const MainPokedex = styled.section`
+
+`;
+
 const ContainerCards = styled.div`
   display: flex;
   max-width: 1300px;
@@ -13,7 +17,18 @@ const ContainerCards = styled.div`
   align-items: center;
   gap: 20px;
   margin-bottom: 70px;
-`
+`;
+
+const Header = styled.header`
+  height: 100px;
+  background-color: #DD1A1A;
+`;
+
+const Greeting = styled.h2`
+  width: 1300px;
+  margin: 10px auto;
+`;
+
 
 const Pokedex = () => {
 
@@ -23,9 +38,13 @@ const Pokedex = () => {
   const nameTrainer = useSelector(state => state.nameTrainer);
 
   return (
-    <div>
+    <MainPokedex>
 
-      <h2>{`Welcome to Pokedex APP >>${nameTrainer}<<`}</h2>
+      <Header />
+      
+
+      <Greeting>{`Welcome Trainer to Pokedex APP >>${nameTrainer}<<`}</Greeting>
+
       <ContainerCards>
         {
           pokemons?.results.map( pokemon => (
@@ -38,7 +57,7 @@ const Pokedex = () => {
         }
       </ContainerCards>
 
-    </div>
+    </MainPokedex>
   )
 }
 

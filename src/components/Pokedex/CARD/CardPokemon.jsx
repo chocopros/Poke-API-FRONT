@@ -80,7 +80,7 @@ const CardPokemon = ( { url } ) => {
     <ArticleCard className={`${pokemon?.types[0].type.name}`} >
 
         <ImgPokemon src={pokemon?.sprites.other.home.front_default} alt={pokemon?.name}  />
-        <BgPoke src='public/images/pokeBallBg.png' />
+        <BgPoke src='/images/pokeBallBg.png' />
 
         <SectionsDetails>
             <PokemonName>{pokemon?.name}</PokemonName>
