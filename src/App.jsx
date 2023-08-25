@@ -4,22 +4,27 @@ import Home from './components/Home/Home'
 import ProtectedRoutes from './components/ProtectedRoutes/ProtectedRoutes'
 import Pokedex from './components/Pokedex/Pokedex'
 import PokemonDetails from './components/Pokemon/PokemonDetails'
+import Footer from './components/Footer/Footer'
 
   
 function App() {
+
+  
 
   return (
     <>
       <Routes>
 
         <Route path='/' element={<Home/>} />
-
+    
         <Route element={<ProtectedRoutes />} >
           <Route path='/pokedex' element={<Pokedex />} />
           <Route path='/pokedex/:id' element={<PokemonDetails />} />
         </Route>
 
       </Routes>
+      
+      <Footer />
     </>
   )
 }

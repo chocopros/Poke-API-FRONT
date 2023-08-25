@@ -7,12 +7,12 @@ import styled from 'styled-components';
 const ContainerCards = styled.div`
   display: flex;
   max-width: 1300px;
-  margin: 0 auto;
+  margin: 70px auto;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 20px;
-  
+  margin-bottom: 70px;
 `
 
 const Pokedex = () => {
