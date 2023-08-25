@@ -3,9 +3,10 @@ import { useSelector } from 'react-redux'
 import useFetch from '../../hooks/useFetch';
 import CardPokemon from './CARD/CardPokemon';
 import styled from 'styled-components';
+import Header from '../Header/Header'
 
 const MainPokedex = styled.section`
-
+  min-width: 320px;
 `;
 
 const ContainerCards = styled.div`
@@ -19,15 +20,13 @@ const ContainerCards = styled.div`
   margin-bottom: 70px;
 `;
 
-const Header = styled.header`
-  height: 100px;
-  background-color: #DD1A1A;
-`;
 
 const Greeting = styled.h2`
-  width: 1300px;
+ 
   margin: 10px auto;
 `;
+
+
 
 
 const Pokedex = () => {

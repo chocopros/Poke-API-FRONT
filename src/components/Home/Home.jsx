@@ -54,7 +54,6 @@ const Home = () => {
   return (
     <MainHome>
 
-
       <ContainerLogo>
         <LogoPokedex src="/images/POKEDEX-LOGO.png" alt="Pokedex Logo" />
       </ContainerLogo>
