@@ -5,7 +5,7 @@ import ProtectedRoutes from './components/ProtectedRoutes/ProtectedRoutes'
 import Pokedex from './components/Pokedex/Pokedex'
 import PokemonDetails from './components/Pokemon/PokemonDetails'
 import Footer from './components/Footer/Footer'
-import NoInfo from './components/NoInfo/Noinfo'
+import NoInfo from './components/NoInfo/NoInfo'
 
   
 function App() {

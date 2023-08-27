@@ -1,1 +1,9 @@
 
+.example{
+    justify-content: center;
+    align-items: center;
+    border-style: none;
+    flex-wrap: wrap;
+    min-height: calc(100vh - 150px);
+    height: 30px;
+}

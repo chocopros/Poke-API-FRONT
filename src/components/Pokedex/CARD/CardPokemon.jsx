@@ -17,6 +17,16 @@ const ArticleCard = styled.div`
     border-radius: 15px;
     padding-top: -10px;
     overflow: hidden;
+
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.05);
+        transition: transform 200ms ease;
+        -webkit-box-shadow: 10px 10px 34px -12px rgba(0,0,0,0.45);
+        -moz-box-shadow: 10px 10px 34px -12px rgba(0,0,0,0.45);
+        box-shadow: 10px 10px 34px -12px rgba(0,0,0,0.45);
+    }
     
 `;
 

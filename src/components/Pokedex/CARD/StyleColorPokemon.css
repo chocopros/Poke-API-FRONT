@@ -1,6 +1,6 @@
 .grass{
     background: rgb(126,198,197);
-background: linear-gradient(180deg, rgba(126,198,197,1) 0%, rgba(171,218,198,1) 35%, rgba(202,224,153,1) 100%);
+    background: linear-gradient(180deg, rgba(126,198,197,1) 0%, rgba(171,218,198,1) 35%, rgba(202,224,153,1) 100%);
 }
 
 .grass-slop{
@@ -26,7 +26,7 @@ background: linear-gradient(180deg, rgba(126,198,197,1) 0%, rgba(171,218,198,1) 
 
 .bug{
     background: rgb(98,219,96);
-background: linear-gradient(180deg, rgba(98,219,96,1) 0%, rgba(59,176,57,1) 35%, rgba(170,255,168,1) 100%);
+    background: linear-gradient(180deg, rgba(98,219,96,1) 0%, rgba(59,176,57,1) 35%, rgba(170,255,168,1) 100%);
 }
 
 .bug-slop{
@@ -40,4 +40,13 @@ background: linear-gradient(180deg, rgba(98,219,96,1) 0%, rgba(59,176,57,1) 35%,
 
 .normal-slop{
     background-color: rgb(176, 111, 32);
+}
+
+.electric{
+    background: rgb(255,179,0);
+    background: linear-gradient(0deg, rgba(255,179,0,1) 0%, rgba(249,255,0,1) 33%, rgba(255,132,0,1) 85%);
+}
+
+.electric-slop{
+    background-color: rgb(255, 140, 0);
 }
