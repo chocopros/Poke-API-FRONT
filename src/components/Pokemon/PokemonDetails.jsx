@@ -48,6 +48,7 @@ const PokemonDetails = () => {
           height={pokemon?.height}
           types={pokemon?.types}
           abilities={pokemon?.abilities}
+          stats={pokemon?.stats}
         />
 
       </ContainerInfoPoke>
