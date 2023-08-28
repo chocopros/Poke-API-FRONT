@@ -6,4 +6,6 @@
     flex-wrap: wrap;
     min-height: calc(100vh - 150px);
     height: 30px;
+    background-color: black;
+    font-weight: 700;
 }

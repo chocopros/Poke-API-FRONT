@@ -50,3 +50,92 @@
 .electric-slop{
     background-color: rgb(255, 140, 0);
 }
+
+.fighting{
+    background: rgb(65,19,5);
+    background: linear-gradient(180deg, #CB735D 0%, #F1613C 35%, #96402A 100%);
+}
+
+.fighting-slop{
+    background-color: rgb(255, 140, 0);
+}
+
+.poison{
+    background: linear-gradient(180deg, #CE9BFF 0%, #A564E3 35%, #5B3184 100%);
+}
+
+.poison-slop{
+    background-color: rgb(255, 0, 255);
+}
+
+.ground {
+    background: linear-gradient(180deg, #6b6b77 0%, #4f4f58 35%, #7E7E7E 100%);
+}
+
+.ground-slop {
+    background-color: rgb(44, 44, 44);
+}
+
+.rock {
+    background: linear-gradient(180deg, #3D3D3F 0%, #8D8D94 35%, #7E7E7E 100%);
+}
+
+.rock-slop {
+    background-color: rgb(44, 44, 44);
+}
+
+.ghost{
+    background: linear-gradient(180deg, #787DDA 0%, #454AA8 35%, #323569 100%);
+}
+
+.ghost-slop {
+    background-color: rgb(44, 44, 44);
+}
+
+.steel {
+    background: linear-gradient(180deg, #5E736C 0%, #728881 35%, #A8A8A8 100%);
+}
+
+.steel-slop {
+    background-color: rgb(199, 199, 199);
+}
+
+.dark {
+    background: linear-gradient(180deg, #030706 0%, #0D1211 35%, #5A5E5D 100%);
+}
+
+.dark-slop {
+    background-color: rgb(0, 0, 0);
+}
+
+.ice {
+    background: linear-gradient(180deg, #6FBEDF 0%, #64CBF5 35%, #BDEBFE 100%);
+}
+
+.ice-slop {
+    background-color: rgb(40, 237, 255);
+}
+
+.dragon {
+    background: linear-gradient(180deg, #478A93 0%, #56A4AE 35%, #A2BEC1 100%);
+}
+
+.dragon-slop {
+    background-color: rgb(0, 0, 0);
+}
+
+.fairy {
+    background: linear-gradient(180deg, #dd9dd2 0%, #ae569f 35%, #c04787 100%);
+}
+
+.fairy-slop {
+    background-color: rgb(217, 96, 253);
+}
+
+.psychic {
+    background: linear-gradient(180deg, #dd9dd2 0%, #401a3a 35%, #38031f 100%);
+}
+
+.psychic-slop {
+    background-color: rgb(49, 9, 61);
+}

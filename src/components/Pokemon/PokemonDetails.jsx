@@ -46,6 +46,8 @@ const PokemonDetails = () => {
           typeBg={pokemon?.types[0].type.name}
           weight={pokemon?.weight}
           height={pokemon?.height}
+          types={pokemon?.types}
+          abilities={pokemon?.abilities}
         />
 
       </ContainerInfoPoke>

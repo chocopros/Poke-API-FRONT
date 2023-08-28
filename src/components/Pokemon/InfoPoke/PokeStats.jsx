@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import '../../Pokedex/CARD/StyleColorPokemon.css'
 
 const MainStats = styled.article`
-    background-color: rgba(0,0,0,0.15);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,9 +21,9 @@ const HeaderImg = styled.header`
 `;
 
 const ImgPoke = styled.img`
-    height: 300px;
+    height: 400px;
     position: absolute;
-    bottom: 10%;
+    bottom: -50px;
 `;
 
 const InfoBasicPokemon = styled.div`
@@ -32,7 +31,8 @@ const InfoBasicPokemon = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 50px 0;
+    margin: 20px 0;
+    margin-top: 60px;
 `;
 
 const NumberPokemon = styled.h2`
@@ -48,6 +48,7 @@ const NamePokemon = styled.h1`
 
 const ContainerWh = styled.div`
     display: flex;
+    flex-wrap: wrap;
     gap: 50px;
     text-transform: capitalize;
 `;
@@ -57,9 +58,50 @@ const ContainerDetailsWh = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    flex-wrap: wrap;
+    
 `;
 
+const TypeAbilityPokemon = styled.div`
+    display: flex;
+    margin: 20px 0;
+    width: 100%;
+    
+`;
+
+const ContainerRg = styled.div`
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+`;
+
+const SlopContainer = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+`;
+
+const Slop = styled.div`
+    text-transform: capitalize; 
+    color: #ffff;
+    padding: 7px 30px;
+    font-weight: 700;
+`;
+
+const SlopTwo = styled(Slop)`
+    border: 1px solid black;
+    color: black;
+`
+
 const PokeStats = ( { name, ...pokemon} ) => {
+
+    console.log(pokemon)
 
   return (
     <MainStats>
@@ -67,7 +109,7 @@ const PokeStats = ( { name, ...pokemon} ) => {
             <ImgPoke src={pokemon.imgPokemon} alt='name' />
         </HeaderImg>
         <InfoBasicPokemon>
-            <NumberPokemon>{`#${pokemon.id}`}</NumberPokemon>
+            <NumberPokemon>{`#${pokemon?.id}`}</NumberPokemon>
             <NamePokemon>{name}</NamePokemon>
             <ContainerWh>
                 <ContainerDetailsWh>
@@ -79,7 +121,31 @@ const PokeStats = ( { name, ...pokemon} ) => {
                     <p>{`${pokemon.height} dm`}</p>
                 </ContainerDetailsWh>
             </ContainerWh>
-        
+            <TypeAbilityPokemon>
+                <ContainerRg>
+                    <h3>Type</h3>
+                    <SlopContainer className="container__type">
+
+                        {
+                            pokemon.types?.map(t => (
+                            <Slop className={`${t.type.name}-slop`} key={t.type.name}>{t.type.name}</Slop>
+                            ))
+                        }
+                         
+                    </SlopContainer>
+                </ContainerRg>
+                <ContainerRg>
+                    <h3>Abilities</h3>
+                    <SlopContainer className="container__type">
+                    {
+                            pokemon.abilities?.map(a => (
+                            <SlopTwo  key={a.ability.name}>{a.ability.name}</SlopTwo>
+                            ))
+                        }
+
+                    </SlopContainer>
+                </ContainerRg>
+            </TypeAbilityPokemon>
 
         </InfoBasicPokemon>
     </MainStats>
