@@ -24,13 +24,13 @@ const RedLabel = styled.div`
 
 const Autor = styled.p`
     color: white;
-    margin-right: 20px;
-    font-size: small;
+    font-size: clamp(0.65rem, 2.5vw, 1rem);
 `;
 
 const Contact = styled.ul`
     display: flex;
     height: 30px;
+    gap: 10px
 `;
 
 const Logo = styled.img`
@@ -44,6 +44,7 @@ const Footer = () => {
         <RedLabel>
             <Contact>
                 <li><a href="https://github.com/chocopros"><Logo src="/images/github-1.png" alt="" /></a></li>
+                <li><a href="https://www.linkedin.com/in/jesusarechider/"><Logo src="/images/LinkedIn_icon_circle.svg.png" alt="" /></a></li>
             </Contact>
             <Autor>Application created by Jesus Arechider, all rights reserved</Autor>
             

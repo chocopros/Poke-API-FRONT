@@ -43,7 +43,7 @@ const ButtonGo = styled.button`
   padding: 12px 20px;
   border-style: none;
   color: #ffff;
-  background-color: #F93318;
+  background-color: #DD1A1A;
   font-weight: 700;
 `;
 
