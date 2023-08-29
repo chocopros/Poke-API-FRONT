@@ -3,7 +3,6 @@ import axios from 'axios';
 import styled from 'styled-components';
 import Header from '../Header/Header';
 import { useParams } from 'react-router-dom';
-import PokeMotions from './InfoPoke/PokeMotions';
 import PokeStats from './InfoPoke/PokeStats';
 
 const MainDetailsPokemon = styled.section`
