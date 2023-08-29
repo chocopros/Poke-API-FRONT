@@ -1,9 +1,10 @@
 import React from 'react'
 import styled from 'styled-components';
+import { useNavigate } from 'react-router-dom';
 
 const Top = styled.header`
     height: 150px;
-    background-color: #DD1A1A;
+    background-color: #FD0000;
     position: relative;
     box-shadow: 5px 10px #00000015;
 `;
@@ -29,10 +30,17 @@ const LogoPokedex = styled.img`
 `;
 
 const Header = () => {
+
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate(`/pokedex`)
+  };
+
   return (
     <Top>
 
-      <ContainerImg>
+      <ContainerImg onClick={handleClick}>
         <LogoPokedex src='/images/POKEDEX-LOGO.png' />
       </ContainerImg>
 

@@ -6,23 +6,29 @@ const SearchPokemon = styled.form`
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+  gap: 30px;
   
 `;
 
 const ContainerSearch = styled.div`
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-width: 350px;
 `;
 
 const SearchIn = styled.input`
-  padding: 10px 10%;
+  padding: 10px 10px;
+  width: 70%;
 `;
 
 const Button = styled.button`
-  padding: 10px 20%;
+  padding: 10px 20px;
   border-radius: 5px;
   color: white;
   background-color: #D93F3F;
   border-style: none;
+  
 `;
 
 const SelectTypePokemon = styled.select`

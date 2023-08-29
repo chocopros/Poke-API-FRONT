@@ -35,6 +35,18 @@ const Title = styled.h1`
   color: red;
 `;
 
+const InputName = styled.input`
+  padding: 10px 10px;
+`;
+
+const ButtonGo = styled.button`
+  padding: 12px 20px;
+  border-style: none;
+  color: #ffff;
+  background-color: #F93318;
+  font-weight: 700;
+`;
+
 
 const Home = () => {
 
@@ -63,8 +75,8 @@ const Home = () => {
         <Title>Hi Trainer! Pokemon Master</Title>
         <p>To Start give me your trainer name</p>
         <form onSubmit={handleSubmit}>
-            <input id='name' type="text" />
-            <button>Go!</button>
+            <InputName id='name' type="text" />
+            <ButtonGo>Go!</ButtonGo>
         </form>
       </BodyWelcome>
         

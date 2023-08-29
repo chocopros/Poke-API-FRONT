@@ -4,13 +4,17 @@ import styled from 'styled-components';
 import Header from '../Header/Header';
 import { useParams } from 'react-router-dom';
 import PokeStats from './InfoPoke/PokeStats';
+import MotionsPoke from './MotionsPoke/MotionsPoke';
 
 const MainDetailsPokemon = styled.section`
-  min-height: calc(100vh - 100px);
+  
 `;
 
 const ContainerInfoPoke = styled.article`
-
+  min-height: calc(100vh - 100px);
+  max-width: 1300px;
+  margin: 0 auto;
+  background-color: rgb(243, 243, 243);
 `;
 
 
@@ -30,6 +34,7 @@ const PokemonDetails = () => {
 
     console.log(pokemon)
   
+    
 
   return (
     <MainDetailsPokemon>
@@ -49,6 +54,9 @@ const PokemonDetails = () => {
           abilities={pokemon?.abilities}
           stats={pokemon?.stats}
         />
+        
+        <MotionsPoke />
+        
 
       </ContainerInfoPoke>
 

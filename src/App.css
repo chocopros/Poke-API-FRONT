@@ -9,4 +9,6 @@
     background-color: black;
     font-weight: 700;
     border-radius: 15px;
+    border-style: none;
+    color: rgb(1,1,1)
 }

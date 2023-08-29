@@ -9,7 +9,6 @@ const MainStats = styled.article`
     justify-content: center;
     margin: 0 auto;
     margin-top: 160px;
-    max-width: 1300px;
 `;
 
 const HeaderImg = styled.header`
@@ -48,7 +47,7 @@ const PokeStats = ({ name, ...pokemon }) => {
             </HeaderImg>
 
             <InfoBasicPoke
-                name={name}
+                name={name || 'Loading...'}
                 id={pokemon?.id}
                 weight={pokemon?.weight}
                 height={pokemon?.height}

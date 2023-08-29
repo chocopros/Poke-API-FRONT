@@ -10,7 +10,7 @@ const InfoStats = styled.div`
 `;
 
 const ContainerStats = styled.div`
-    width: 70%;
+    width: 100%;
     margin: 0 auto;
 `;
 
