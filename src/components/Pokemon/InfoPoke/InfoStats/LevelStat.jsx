@@ -15,10 +15,12 @@ const ContainerBarra = styled.div`
 `;
 
 const GreyLabel = styled.div`
+    
     width: 100%;
     height: 30px;
     background: rgb(255,255,255);
     background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(194,194,194,1) 45%, rgba(106,106,106,1) 100%);
+    border-radius: 15px;
 `
 const YellowLabel = styled.div`
     position: absolute;
@@ -26,6 +28,7 @@ const YellowLabel = styled.div`
     height: 30px;
     background: rgb(252,214,118);
     background: linear-gradient(90deg, rgba(252,214,118,1) 0%, rgba(230,144,30,1) 45%, rgba(255,58,0,1) 100%);
+    border-radius: 15px;
 `;
 
 const LevelStat = ({ name, level }) => {

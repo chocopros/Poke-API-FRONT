@@ -10,7 +10,8 @@ const InfoStats = styled.div`
 `;
 
 const ContainerStats = styled.div`
-    
+    width: 70%;
+    margin: 0 auto;
 `;
 
 const ContainerStat = styled.div`
@@ -45,9 +46,9 @@ const InfoStatsComponent = ( {hpPokemon, defensePokemon, attackPokemon, speedPok
 
     const pokemonStats = {
         HP: hpPokemon || 'load',
-        DEFENSA: defensePokemon,
-        ATTACK: attackPokemon,
-        SPEED: speedPokemon
+        DEFENSA: defensePokemon || 'load',
+        ATTACK: attackPokemon || 'load',
+        SPEED: speedPokemon || 'load'
     };
 
 
