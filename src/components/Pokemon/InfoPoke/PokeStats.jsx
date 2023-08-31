@@ -9,6 +9,7 @@ const MainStats = styled.article`
     justify-content: center;
     margin: 0 auto;
     margin-top: 160px;
+    background-color: rgb(243, 243, 243);
 `;
 
 const HeaderImg = styled.header`
@@ -45,7 +46,7 @@ const PokeStats = ({ name, ...pokemon }) => {
             <HeaderImg className={`${pokemon.typeBg}`}>
                 <ImgPoke src={pokemon.imgPokemon} alt='name' />
             </HeaderImg>
-
+           
             <InfoBasicPoke
                 name={name || 'Loading...'}
                 id={pokemon?.id}

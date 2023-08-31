@@ -14,7 +14,7 @@ const ContainerInfoPoke = styled.article`
   min-height: calc(100vh - 100px);
   max-width: 1300px;
   margin: 0 auto;
-  background-color: rgb(243, 243, 243);
+  
 `;
 
 
@@ -32,7 +32,7 @@ const PokemonDetails = () => {
         .catch(err => console.log(err))
     },[url])
 
-    console.log(pokemon)
+    //console.log(pokemon)
   
     
 
@@ -55,7 +55,9 @@ const PokemonDetails = () => {
           stats={pokemon?.stats}
         />
         
-        <MotionsPoke />
+        <MotionsPoke
+          moves={pokemon?.moves}
+        />
         
 
       </ContainerInfoPoke>

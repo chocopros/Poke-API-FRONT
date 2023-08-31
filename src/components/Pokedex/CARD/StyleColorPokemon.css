@@ -139,3 +139,11 @@
 .psychic-slop {
     background-color: rgb(49, 9, 61);
 }
+
+.flying {
+    background: linear-gradient(180deg, #b0e4fa 0%, #000e0d 35%, #3f6161 100%);
+}
+
+.flying-slop {
+    background-color: rgb(0, 0, 0);
+}

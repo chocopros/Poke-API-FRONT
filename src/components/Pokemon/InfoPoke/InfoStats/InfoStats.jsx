@@ -6,7 +6,7 @@ const InfoStats = styled.div`
     display: flex;
     flex-direction: column;
     padding: 0 30px;
-    margin: 50px 0;
+    margin: 35px 0;
 `;
 
 const ContainerStats = styled.div`
