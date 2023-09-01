@@ -6,6 +6,7 @@ import Header from '../Header/Header';
 import InputSearch from './Input/InputSearch';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+import Pagination from './Pagination/Pagination';
 
 
 const MainPokedex = styled.section`
@@ -122,6 +123,11 @@ const Pokedex = () => {
           ))
         }
       </ContainerCards>
+
+      <Pagination
+        next={pokemons?.next}
+        previous={pokemons?.previous}
+      />
 
     </MainPokedex>
   )
