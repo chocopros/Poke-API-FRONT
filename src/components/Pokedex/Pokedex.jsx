@@ -44,7 +44,7 @@ const Pokedex = () => {
   const [pokeShType, setPokeShType] = useState('');
 
 
-  const typePokemons =useFetch('https://pokeapi.co/api/v2/type')
+  const typePokemons = useFetch('https://pokeapi.co/api/v2/type')
   //console.log(typePokemons)
 
   const nameTrainer = useSelector(state => state.nameTrainer);
@@ -98,6 +98,9 @@ const Pokedex = () => {
 
   },[pokeSearch, pokeShType])
 
+  const next = pokemons?.next
+  const previous = pokemons?.previous
+
   return (
     <MainPokedex>
 
@@ -125,8 +128,9 @@ const Pokedex = () => {
       </ContainerCards>
 
       <Pagination
-        next={pokemons?.next}
-        previous={pokemons?.previous}
+        next={next}
+        previous={previous}
+        setPokemons={setPokemons}
       />
 
     </MainPokedex>

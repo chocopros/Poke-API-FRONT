@@ -42,7 +42,7 @@ const MotionsPoke = ({ moves }) => {
         <ContainerMove>
 
           {
-            moves?.map(m => <MovePoke>{m.move.name}</MovePoke>)
+            moves?.map(m => <MovePoke key={m.move.name}>{m.move.name}</MovePoke>)
           }
 
         </ContainerMove>
